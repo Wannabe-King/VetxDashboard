@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import "./styles/index.css"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import NotFound from './components/NotFound.tsx'
+import ErrorLoadingPage from './components/ErrorLoadingPage.tsx'
 import Profile from './pages/Profile.tsx'
 import Analytics from './pages/Analytics.tsx'
 
@@ -14,13 +14,13 @@ const router = createBrowserRouter(
       element: <App/>,
       children: [
         { index: true, element: <Analytics/> },
-        { path: "profile", element: <Profile/> } // Remove leading slash
+        { path: "/profile", element: <Profile/> } 
       ],
-      errorElement: <NotFound/>
+      errorElement: <ErrorLoadingPage/>
     }
   ],
   {
-    basename: import.meta.env.BASE_URL // Add this
+    // basename: import.meta.env.BASE_URL
   }
 );
 

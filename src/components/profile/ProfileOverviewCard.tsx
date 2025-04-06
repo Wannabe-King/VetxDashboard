@@ -21,7 +21,7 @@ const ProfileOverviewCard = () => {
         <p className="text-[12px] font-medium flex items-center flex-nowrap">
           Co-Founder & CEO @Vertx
           <img
-            src="/assets/vertxLogo.png"
+            src="/vertxLogo.png"
             className="ml-1.5"
             alt="Vertx Logo"
             height={12}

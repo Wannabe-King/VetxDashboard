@@ -1,14 +1,14 @@
 import { LucideIcon, User2Icon } from "lucide-react";
 import React from "react";
 
-interface UserProfileProps {
+interface UserProfileIconProps {
   profileUrl?: string; 
   isOnline?: boolean;
   Icon?: LucideIcon;
   className ?: string
 }
 
-const UserProfile: React.FC<UserProfileProps> = ({ profileUrl, isOnline, Icon , className="" }) => {
+const UserProfileIcon: React.FC<UserProfileIconProps> = ({ profileUrl, isOnline, Icon , className="" }) => {
 
   return (
     <div className={`relative h-[50px] w-[49px] flex items-center justify-center ${className}`}>
@@ -38,4 +38,4 @@ const UserProfile: React.FC<UserProfileProps> = ({ profileUrl, isOnline, Icon , 
   );
 };
 
-export default UserProfile;
+export default UserProfileIcon;

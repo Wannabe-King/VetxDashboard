@@ -18,13 +18,17 @@ const InnerNav: React.FC<InnerNavProps> = ({ navItems }) => {
             children={menu.title}
             className={
               menu.className +
-              ` ${currentItem === menu.id ? "text-white max-lg:border-b-[2px] max-lg:border-l-0 max-lg:border-white" : "text-[#555555]"}`
+              ` ${
+                currentItem === menu.id
+                  ? "text-white max-lg:border-b-[2px] max-lg:border-l-0 max-lg:border-white"
+                  : "text-[#555555]"
+              }`
             }
           />
         ))}
       </div>
 
-      <Button children={"More"} className="max-lg:hidden"/>
+      <Button children={"More"} className="max-lg:hidden" />
     </div>
   );
 };

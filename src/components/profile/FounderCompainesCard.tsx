@@ -1,6 +1,6 @@
 const companies = [
   {
-    logo: "/logo.png", // Replace with actual image path
+    logo: "/vertxLogo.png", // Replace with actual image path
     name: "Vertx",
     role: "CEO",
     roleBgColor: "bg-[#579560]",

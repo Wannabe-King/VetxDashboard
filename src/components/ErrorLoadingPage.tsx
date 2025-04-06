@@ -35,12 +35,6 @@ const ErrorLoadingPage = () => {
           >
             Try Again
           </button>
-          <a
-            href="/"
-            className="px-6 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors shadow-sm"
-          >
-            Return Home
-          </a>
         </div>
       </div>
     </div>

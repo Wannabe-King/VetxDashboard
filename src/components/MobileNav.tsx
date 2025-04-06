@@ -14,7 +14,7 @@ const MobileNav = () => {
             </Link>
 
          <span className="h-[30px] w-[30px] inline-flex items-center justify-center rounded-full bg-white">
-          <img src="/logo.png" alt="vertex logo" className="h-4 w-4" />
+          <img src="/assets/vertxLogo.png" alt="Vertex Logo" className="h-4 w-4" />
         </span>
 
         <EllipsisVertical size={30} />

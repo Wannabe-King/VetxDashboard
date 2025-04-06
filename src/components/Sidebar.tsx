@@ -11,10 +11,10 @@ const Sidebar = () => {
 
       <div className=" col-span-2 px-3 grid grid-cols-[50px_1fr] items-center border-b border-[#1D1D1D]">
         <span className="h-[30px] w-[30px] inline-flex items-center justify-center rounded-full bg-white">
-          <img src="/logo.png" alt="vertex logo" className="h-4 w-4" />
+          <img src="/vertxLogo.png" alt="vertex logo" className="h-4 w-4" />
         </span>
 
-        <h1 className="font-manrope px-3 text-lg font-bold text-nowrap">
+        <h1 className="font-manrope px-3 text-lg font-semibold text-nowrap">
           Vertxlabs, Inc
         </h1>
       </div>

@@ -7,24 +7,22 @@ import NotFound from './components/NotFound.tsx'
 import Profile from './pages/Profile.tsx'
 import Analytics from './pages/Analytics.tsx'
 
-const router = createBrowserRouter([{
-  path:"/",
-  element:<App/>,
-
-  children: [ 
-    { 
-      index: true, 
-      element: <Analytics/>
-    },
+const router = createBrowserRouter(
+  [
     {
-      path:"/profile",
-      element: <Profile/>
+      path: "/",
+      element: <App/>,
+      children: [
+        { index: true, element: <Analytics/> },
+        { path: "profile", element: <Profile/> } // Remove leading slash
+      ],
+      errorElement: <NotFound/>
     }
   ],
-
-  errorElement: <NotFound/>
-
-}])
+  {
+    basename: import.meta.env.BASE_URL // Add this
+  }
+);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

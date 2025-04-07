@@ -16,7 +16,7 @@ const Demographics = () => {
 
   return (
     <div className="bg-[#000000] relative border border-[#1D1D1D] rounded-[8px] py-3 px-4 flex-1 h-auto lg:h-[296px]">
-      <h1 className="text-[20px] font-bold">Demographics</h1>
+      <h1 className="text-[20px] font-semibold">Demographics</h1>
 
       <div className="top-[58px] z-[20] absolute">
         <DropDown

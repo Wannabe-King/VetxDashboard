@@ -27,8 +27,8 @@ const UserProfileIcon: React.FC<UserProfileIconProps> = ({ profileUrl, isOnline,
       </div>
         {
             !Icon && <div
-              className={`absolute bottom-[11px] right-[11px] z-10 h-2 w-2 rounded-full ${
-                isOnline ? "bg-[#01754F]" : "bg-[#aaaaaa]"
+              className={`absolute bottom-[9px] right-[8px] z-10 h-2 w-2 rounded-full ${
+                isOnline ? "bg-[#3bdd6b]" : "bg-[#066fc5]"
               }`}
             ></div>
 

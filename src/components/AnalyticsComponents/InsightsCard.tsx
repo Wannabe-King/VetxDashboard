@@ -15,7 +15,7 @@ const InsightsCard = () => {
   return (
     <div className=" text-white px-5 py-[12px] rounded-lg border border-[#1D1D1D] w-full lg:w-[274px] bg-black">
       <div className="flex items-center justify-between gap-1 mb-3">
-        <h2 className="text-[20px] font-bold">Insights</h2>
+        <h2 className="text-[20px] font-semibold">Insights</h2>
 
         <DropDown
           className="min-w-[120px]"
@@ -27,7 +27,7 @@ const InsightsCard = () => {
 
       <div className="space-y-3 flex max-lg:gap-10 lg:flex-col">
         <div>
-          <p className="text-base font-semibold">Founders</p>
+          <p className="text-base font-medium">Founders</p>
           <div className="flex items-center gap-4">
             <h3 className="text-[32px] font-extrabold">7.4K</h3>
             <span className="flex flex-col">
@@ -38,7 +38,7 @@ const InsightsCard = () => {
         </div>
 
         <div>
-          <p className="text-base font-semibold">Investors</p>
+          <p className="text-base font-medium">Investors</p>
           <div className="flex items-center gap-4">
             <h3 className="text-[32px] font-extrabold ">6.09K</h3>
             <span className="flex flex-col">

@@ -24,6 +24,14 @@ const Sidebar = () => {
             isOnline={true}
             className="border-b border-[#1D1D1D]"
           />
+          <UserProfileIcon
+            isOnline={false}
+            className="border-b border-[#1D1D1D]"
+          />
+          <UserProfileIcon
+            isOnline={true}
+            className="border-b border-[#1D1D1D]"
+          />
         </div>
 
         <UserProfileIcon Icon={Plus} className="border-t border-[#1D1D1D] " />

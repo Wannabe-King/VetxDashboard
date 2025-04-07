@@ -7,7 +7,7 @@ interface OverviewProps {
 const Overview = ({children}:OverviewProps) => {
   return (
     <div className=''>
-        <h1 className="text-[28px] hidden lg:block font-extrabold">Overview</h1>
+        <h1 className="text-[28px] hidden lg:block font-bold">Overview</h1>
         {children}
     </div>
   )

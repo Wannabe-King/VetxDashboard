@@ -2,15 +2,8 @@ import { useState } from "react";
 import { Globe } from "./Globe";
 import DropDown from "../../UI/DropDown";
 import CountryStats from "../CountryStates";
+import { location } from "../../../db/locationOfOffices";
 import { categoryList } from "../../../db/dummyData";
-
-const LOCATIONS = [
-  { lat: 9.2599, lng: 75.4126, label: "India", lineColor: "#6366f1" },
-  { lat: 10.7749, lng: -108.4194, label: "USA", lineColor: "#ea580c" },
-  { lat: 50.7749, lng: -73.4194, label: "USA", lineColor: "#ea580c" },
-  { lat: 35.4215, lng: -105.6995, label: "Canada", lineColor: "#facc15" },
-  { lat: -10.276987, lng: 43.296249, label: "UAE", lineColor: "#10b981" },
-];
 
 const Demographics = () => {
   const [selectedOption, setSelectedOption] = useState<number>(
@@ -35,7 +28,7 @@ const Demographics = () => {
       </div>
 
       <div className="w-[100%] h-auto lg:h-[200px] flex flex-wrap lg:flex-row flex-col gap-16 lg:gap-10 ">
-        <Globe dots={LOCATIONS} />
+        <Globe dots={location} />
         <CountryStats />
       </div>
     </div>

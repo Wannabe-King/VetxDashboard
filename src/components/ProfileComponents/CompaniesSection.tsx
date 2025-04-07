@@ -1,25 +1,4 @@
-const companies = [
-  {
-    logo: "/vertxLogo.png", // Replace with actual image path
-    name: "Vertx",
-    role: "CEO",
-    roleBgColor: "bg-[#579560]",
-    roleColor: "text-[#04470B]",
-    description: "Founded in 2025. in",
-    industry: "Fintech",
-    profileUrl: "#",
-  },
-  {
-    logo: "/checkbox.webp", // Replace with actual image path
-    name: "Company",
-    role: "PROPRIETOR",
-    roleBgColor: "bg-[#B1BDEB]",
-    roleColor: "text-[#10074F]",
-    description: " ",
-    industry: "Details/Information like acquired /exit/m&a",
-    profileUrl: "#",
-  },
-];
+import { companies } from "../../db/companies";
 
 const CompaniesSection = () => {
   return (
@@ -35,7 +14,7 @@ const CompaniesSection = () => {
           >
             <div className="flex gap-2.5">
               <img
-                src={company.logo}
+                src={company.logo??"/placeholder.webp"}
                 alt={company.name}
                 className="w-8 h-8 rounded-[2px] object-cover"
               />
@@ -57,10 +36,7 @@ const CompaniesSection = () => {
               </div>
             </div>
 
-            <a
-              href={company.profileUrl}
-               className="text-[10px] font-medium"
-            >
+            <a href={company.profileUrl} className="text-[10px] font-medium">
               View Profile
             </a>
           </div>

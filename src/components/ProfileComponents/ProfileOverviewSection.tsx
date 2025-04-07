@@ -8,10 +8,10 @@ const ProfileOverviewSection = () => {
       </div>
 
       <div className="">
-        <div className="flex gap-2 justify-between items-center flex-nowrap">
-          <h1 className="text-[24px] font-bold w-[200px]">Mr.A</h1>
+        <div className="flex gap-5 items-center flex-nowrap">
+          <h1 className="text-[24px] font-bold ">Mr.A</h1>
           <img
-            src="/verifiedBadge.svg"
+            src="/verifiedIcon.svg"
             alt="varified-icon"
             className="h-[24px] w-[24px]"
           />
@@ -33,7 +33,7 @@ const ProfileOverviewSection = () => {
             Entrepreneur
           </span>
 
-          <div className="inline-flex sm:flex gap-2 items-center sm:mt-8">
+          <div className="inline-flex sm:flex gap-5 items-center sm:mt-8">
             <img
               height={40}
               width={40}

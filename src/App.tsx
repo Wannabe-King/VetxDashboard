@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
 import NavigationMenu from "./components/NavigationMenu";
 import Sidebar from "./components/Sidebar";
-import MobileNav from "./components/MobileNav";
-import MobileSidebar from "./components/MobileSidebar";
+import MobileNav from "./components/MobNavBar";
+import MobileSidebar from "./components/MobSidebar";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Outlet />
         </div>
       </div>
-      <MobileSidebar/>
+      {/* <MobileSidebar/> */}
     </section>
   );
 }

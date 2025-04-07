@@ -1,4 +1,4 @@
-import Button from "./UI/Button";
+import Button from "./CustomButton";
 import React, { useState } from "react";
 
 interface InnerNavProps {

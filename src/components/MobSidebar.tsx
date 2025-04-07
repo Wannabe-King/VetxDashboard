@@ -4,33 +4,33 @@ import {
   Earth,
   LayoutDashboard,
 } from "lucide-react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const navLinks = [
   {
     id: 1,
     title: "Dashboard",
-    href: "#"
+    href: "#",
   },
   {
     id: 1,
     title: "Analytics",
-    href: "/"
+    href: "/",
   },
   {
     id: 1,
     title: "Connect",
-    href: "#"
+    href: "#",
   },
   {
     id: 1,
     title: "Activity",
-    href: "#"
+    href: "#",
   },
   {
     id: 1,
     title: "Dealroom",
-    href: "#"
+    href: "#",
   },
 ];
 
@@ -50,7 +50,12 @@ const MobileSidebar = () => {
             {Icon ? (
               <Icon size={20} />
             ) : (
-              <img height="28px" width="28px" src="/dealroom.png" alt="icon" />
+              <img
+                height="28px"
+                width="28px"
+                src="/dealroomIcon.png"
+                alt="icon"
+              />
             )}
             <span className="text-[8px] font-semibold">{link.title}</span>
           </Link>

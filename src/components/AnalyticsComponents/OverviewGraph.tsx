@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import DropDown from "../UI/DropDown";
+import DropDown from "../CustomDropDown";
 
 import {
   LineChart,
@@ -9,7 +9,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { categoryList, daysFilter,graphData } from "../../db/dummyData";
+import { categoryList, daysFilter, graphData } from "../../db/dummyData";
 
 const mergeData = (data1: any, data2: any) => {
   const temp = [];
@@ -97,7 +97,15 @@ const GraphComponent = () => {
       if (window.innerWidth < 640) {
         setTicks(["Mar 1", "Mar 10", "Mar 20", "Mar 30"]);
       } else {
-        setTicks(["Mar 1", "Mar 5", "Mar 10", "Mar 15", "Mar 20", "Mar 25", "Mar 30"]);
+        setTicks([
+          "Mar 1",
+          "Mar 5",
+          "Mar 10",
+          "Mar 15",
+          "Mar 20",
+          "Mar 25",
+          "Mar 30",
+        ]);
       }
     };
 
@@ -106,7 +114,6 @@ const GraphComponent = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
 
   return (
     <div className="bg-black relative border border-[#1D1D1D] rounded-[8px] py-3 px-4 flex-1 min-h-[173px]">

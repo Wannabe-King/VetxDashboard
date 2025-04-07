@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
-import DropDown from "../UI/DropDown";
+import DropDown from "../CustomDropDown";
 import { categoryList } from "../../db/dummyData";
 
 const InsightsCard = () => {

@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import "./index.css"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import ErrorLoadingPage from './components/ErrorLoadingPage.tsx'
+import ErrorLoadingPage from './pages/ErrorLoadingPage.tsx'
 import ProfilePage from './pages/ProfilePage.tsx'
 import AnalyticsPage from './pages/AnalyticsPage.tsx'
 

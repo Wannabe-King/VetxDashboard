@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Globe } from "./Globe";
-import DropDown from "../../UI/DropDown";
-import CountryStats from "../CountryStates";
+import DropDown from "../../CustomDropDown";
+import CountryStats from "../CountryMetrics/CountryMetrics";
 import { location } from "../../../db/locationOfOffices";
 import { categoryList } from "../../../db/dummyData";
 

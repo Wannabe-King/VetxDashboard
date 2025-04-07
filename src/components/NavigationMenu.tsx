@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import Button from "./UI/Button";
+import Button from "./CustomButton";
 
 const NavigationMenu = () => {
   const { pathname } = useLocation();

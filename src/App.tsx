@@ -15,7 +15,7 @@ function App() {
           <Outlet />
         </div>
       </div>
-      {/* <MobileSidebar/> */}
+      <MobileSidebar/>
     </section>
   );
 }

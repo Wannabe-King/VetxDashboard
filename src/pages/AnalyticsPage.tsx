@@ -1,5 +1,4 @@
-
-import Demographics from "../components/AnalyticsComponents/Demographics";
+import Demographics from "../components/AnalyticsComponents/Demographics/Demographics";
 import InsightsCard from "../components/AnalyticsComponents/InsightsCard";
 import Overview from "../components/AnalyticsComponents/Overview";
 import GraphComponent from "../components/AnalyticsComponents/OverviewGraph";

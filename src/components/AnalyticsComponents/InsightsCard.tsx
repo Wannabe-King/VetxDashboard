@@ -51,7 +51,7 @@ const InsightsCard = () => {
 
       <div className="border-t border-[#1D1D1D] mt-3.5 pt-4 flex items-center justify-end">
         <span className="inline-flex items-center cursor-pointer gap-3">
-          <p className="text-[10px]">View detailed insights</p>
+          <p className="text-[12px]">View detailed insights</p>
           <ArrowRight size={16} stroke="#FFFFFF" />
         </span>
       </div>

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import DropDown from "../UI/DropDown";
-import { categoryList, daysFilter } from "../../db/dummyData";
 
 import {
   LineChart,
@@ -10,6 +9,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import { categoryList, daysFilter,graphData } from "../../db/dummyData";
 
 const mergeData = (data1: any, data2: any) => {
   const temp = [];

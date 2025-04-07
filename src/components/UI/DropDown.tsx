@@ -23,22 +23,21 @@ const DropDown: React.FC<DropdownItemProps> = ({
   const handleChange = (id: number) => {
     setIsOpen(false);
     onChange(id);
-    console.log(id)
+    console.log(id);
   };
 
   return (
     <div className={`relative text-white ${className}`}>
       <div
-        className={`flex items-center justify-between bg-black px-2.5 py-1 border border-[#1D1D1D] cursor-pointer ${
+        className={`mr-2 flex items-center justify-between bg-black px-2.5 py-1 border-2 border-[#1D1D1D] cursor-pointer ${(itemList.find((item) => item.id === selectedValue)?.title)?"" : "border-dashed"}  ${
           isOpen
             ? "rounded-b-none border-b-transparent rounded-md "
             : "rounded-[20px]"
         }`}
         onClick={handleToggleMenu}
       >
-        <span className="text-[12px] text-nowrap font-semibold mr-[5px] inline-block">
-          {itemList.find((item) => item.id === selectedValue)?.title ||
-            "+ Add"}
+        <span className="text-[14px] text-nowrap font-semibold mr-[5px] inline-block">
+          {itemList.find((item) => item.id === selectedValue)?.title || "+ Add"}
         </span>
         <FaCaretDown
           size={16}
@@ -54,7 +53,7 @@ const DropDown: React.FC<DropdownItemProps> = ({
               <li
                 key={item.id}
                 onClick={() => handleChange(item.id)}
-                className={`text-[8px] text-nowrap font-semibold px-2.5 py-1.5 cursor-pointer ${
+                className={`text-[12px] text-nowrap font-semibold px-2.5 py-1.5 cursor-pointer ${
                   item.id === selectedValue
                     ? "bg-[#1D1D1D] text-white"
                     : "text-[#555555] hover:bg-[#1D1D1D] hover:text-white"

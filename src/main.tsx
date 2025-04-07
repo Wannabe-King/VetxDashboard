@@ -4,8 +4,8 @@ import App from './App.tsx'
 import "./styles/index.css"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ErrorLoadingPage from './components/ErrorLoadingPage.tsx'
-import Profile from './pages/Profile.tsx'
-import Analytics from './pages/Analytics.tsx'
+import ProfilePage from './pages/ProfilePage.tsx'
+import AnalyticsPage from './pages/AnalyticsPage.tsx'
 
 const router = createBrowserRouter(
   [
@@ -13,8 +13,8 @@ const router = createBrowserRouter(
       path: "/",
       element: <App/>,
       children: [
-        { index: true, element: <Analytics/> },
-        { path: "/profile", element: <Profile/> } 
+        { index: true, element: <AnalyticsPage/> },
+        { path: "/profile", element: <ProfilePage/> } 
       ],
       errorElement: <ErrorLoadingPage/>
     }

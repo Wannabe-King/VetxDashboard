@@ -1,22 +1,28 @@
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import DropDown from "../UI/DropDown";
-import { categoryList } from "../../mocks/dummyData";
+import { categoryList } from "../../config/dummyData";
 
 const InsightsCard = () => {
+  const [selectedOption, setSelectedOption] = useState<number>(
+    categoryList[0].id
+  );
 
-    const [selectedOption, setSelectedOption] = useState<number>(categoryList[0].id);
-
-    const handleChangeDropdownVal = (value: React.SetStateAction<number>) => {
-        setSelectedOption(value);
-    };
+  const handleChangeDropdownVal = (value: React.SetStateAction<number>) => {
+    setSelectedOption(value);
+  };
 
   return (
     <div className=" text-white px-5 py-[12px] rounded-lg border border-[#1D1D1D] w-full lg:w-[274px] bg-black">
       <div className="flex items-center justify-between gap-1 mb-3">
         <h2 className="text-[20px] font-bold">Insights</h2>
 
-        <DropDown className="min-w-[120px]" itemList={categoryList} selectedValue={selectedOption} onChange={handleChangeDropdownVal}/>
+        <DropDown
+          className="min-w-[120px]"
+          itemList={categoryList}
+          selectedValue={selectedOption}
+          onChange={handleChangeDropdownVal}
+        />
       </div>
 
       <div className="space-y-3 flex max-lg:gap-10 lg:flex-col">

@@ -21,7 +21,7 @@ const companies = [
   },
 ];
 
-const FounderCompainesCard = () => {
+const CompaniesSection = () => {
   return (
     <div className="bg-black text-white px-7 py-4 rounded-[10px] border border-[#1D1D1D]">
       <h2 className="text-[18px] font-extrabold mb-6">Founded Companies</h2>
@@ -70,4 +70,4 @@ const FounderCompainesCard = () => {
   );
 };
 
-export default FounderCompainesCard;
+export default CompaniesSection;

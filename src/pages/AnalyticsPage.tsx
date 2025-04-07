@@ -22,7 +22,7 @@ const PageInnerNavigation = [
   },
 ];
 
-const Analytics = () => {
+const AnalyticsPage = () => {
   return (
     <section className="bg-[#080808] w-full h-auto lg:h-[calc(100vh-50px)] overflow-y-auto no-scrollbar">
       <InnerNav navItems={PageInnerNavigation} />
@@ -42,4 +42,4 @@ const Analytics = () => {
   );
 };
 
-export default Analytics;
+export default AnalyticsPage;

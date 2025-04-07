@@ -1,7 +1,8 @@
-import Demographics from "../components/analytisc/Demographics";
-import InsightsCard from "../components/analytisc/InsightsCard";
-import Overview from "../components/analytisc/Overview";
-import GraphComponent from "../components/analytisc/OverviewGraph";
+
+import Demographics from "../components/AnalyticsComponents/Demographics";
+import InsightsCard from "../components/AnalyticsComponents/InsightsCard";
+import Overview from "../components/AnalyticsComponents/Overview";
+import GraphComponent from "../components/AnalyticsComponents/OverviewGraph";
 import InnerNav from "../components/InnerNav";
 
 const PageInnerNavigation = [

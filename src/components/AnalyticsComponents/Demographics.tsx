@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { categoryList } from "../../config/dummyData";
 import { WorldMap } from "../UI/world-map";
 import DropDown from "../UI/DropDown";
 import CountryStats from "./CountryStates";
+import { categoryList } from "../../db/dummyData";
 
 const LOCATIONS = [
   { lat: 23.2599, lng: 77.4126, label: "India", lineColor: "#6366f1" },

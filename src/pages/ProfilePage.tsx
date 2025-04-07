@@ -1,11 +1,12 @@
-import Overview from "../components/analytisc/Overview";
+
 import InnerNav from "../components/InnerNav";
 import Experiencesection from "../components/ProfileComponents/ExperienceSection";
 import CompainesSection from "../components/ProfileComponents/CompaniesSection";
 import ProfileOverviewSection from "../components/ProfileComponents/ProfileOverviewSection";
-import { PageInnerNavigation } from "../config/profileNavigation";
 import ContentLayout from "../components/ProfileComponents/ContentLayout";
 import GridSection from "../components/ProfileComponents/GridSection";
+import { PageInnerNavigation } from "../db/profileNavigation";
+import Overview from "../components/AnalyticsComponents/Overview";
 
 const ProfilePage = () => {
   return (

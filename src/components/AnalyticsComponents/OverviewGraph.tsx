@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import DropDown from "../UI/DropDown";
-import { categoryList, daysFilter, graphData } from "../../mocks/dummyData";
+import { categoryList, daysFilter } from "../../db/dummyData";
 
 import {
   LineChart,

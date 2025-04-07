@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import DropDown from "../UI/DropDown";
-import { categoryList } from "../../config/dummyData";
+import { categoryList } from "../../db/dummyData";
 
 const InsightsCard = () => {
   const [selectedOption, setSelectedOption] = useState<number>(

@@ -1,20 +1,15 @@
-import { User } from "lucide-react";
+import { UserRound } from "lucide-react";
 
 const ProfileOverviewSection = () => {
   return (
     <div className="bg-black px-10 py-7 w-full flex sm:items-center sm:flex-row flex-col gap-3.5 sm:gap-8 rounded-[10px] border border-[#272727] ">
       <div className="p-5 sm:inline-block hidden">
-        <User size={80} fill="#FFFFFF" />
+        <UserRound size={120} fill="#FFFFFF" color="#26282b" />
       </div>
-      <img
-        src="/checkbox.webp"
-        alt="user profile"
-        className="h-[146px] w-[146px] rounded-[10px] sm:hidden inline-block"
-      />
 
       <div className="">
         <div className="flex gap-2 justify-between items-center flex-nowrap">
-          <h1 className="text-[24px] font-bold w-[200px]">Mr.ABC</h1>
+          <h1 className="text-[24px] font-bold w-[200px]">Mr.A</h1>
           <img
             src="/verifiedBadge.svg"
             alt="varified-icon"
@@ -34,19 +29,19 @@ const ProfileOverviewSection = () => {
         </p>
 
         <div className="flex items-start justify-between gap-2 sm:flex-col">
-          <span className="sm:mt-3 mr-auto rounded-[2px] align-top max-sm:mt-1.5 inline-block bg-white text-black text-[8px] font-medium px-1 py-0.5">
+          <span className="sm:mt-3 mr-auto rounded-[2px] align-top max-sm:mt-1.5 inline-block bg-white text-black text-[10px] font-medium px-1 py-0.5">
             Entrepreneur
           </span>
 
           <div className="inline-flex sm:flex gap-2 items-center sm:mt-8">
             <img
-              height={30}
-              width={30}
+              height={40}
+              width={40}
               src="/linkedin.svg"
               alt="LinkedIn Icon"
             />
-            <img height={30} width={30} src="/x.svg" alt="X.com icon" />
-            <img height={30} width={30} src="/email.svg" alt="Email" />
+            <img height={40} width={40} src="/x.svg" alt="X.com icon" />
+            <img height={40} width={40} src="/email.svg" alt="Email" />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { Plus } from "lucide-react";
 import navLinks from "../utils/navLinks";
 import { Link, useLocation } from "react-router-dom";
-import UserProfileIcon from "./UserProfile";
+import UserProfileIcon from "./userProfileIconwithStatus";
 
 const Sidebar = () => {
   const { pathname } = useLocation();

@@ -1,5 +1,4 @@
-
-import InnerNav from "../components/InnerNav";
+import InnerNav from "../components/innernavbar";
 import Experiencesection from "../components/ProfileComponents/ExperienceSection";
 import CompainesSection from "../components/ProfileComponents/CompaniesSection";
 import ProfileOverviewSection from "../components/ProfileComponents/ProfileOverviewSection";

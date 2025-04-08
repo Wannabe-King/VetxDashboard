@@ -2,7 +2,7 @@ import Demographics from "../components/AnalyticsComponents/Demographics/Demogra
 import InsightsCard from "../components/AnalyticsComponents/InsightsCard";
 import Overview from "../components/AnalyticsComponents/Overview";
 import GraphComponent from "../components/AnalyticsComponents/OverviewGraph";
-import InnerNav from "../components/InnerNav";
+import InnerNav from "../components/innernavbar";
 
 const PageInnerNavigation = [
   {

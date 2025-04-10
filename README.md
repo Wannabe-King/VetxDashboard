@@ -19,6 +19,7 @@ Interactive graphs and insights cards using Recharts
 
 
 
+## Screenshot
 
 ![image](https://github.com/user-attachments/assets/6974ecb2-2625-4a11-84e0-aca1032d8c02)
 

@@ -1,4 +1,4 @@
-# Company Site Analytics Dashboard [[Deployed Link]](vetx-dashboard-vmgw.vercel.app/)
+# Company Site Analytics Dashboard [[Deployed Link]](https://vetx-dashboard-vmgw.vercel.app/)
 Developed a dynamic, pixel-perfect analytics dashboard to visualize company/site performance using interactive charts, metrics, and world demographics.
 Structured the project using modular architecture with well-organized folders (components, pages, db, utils) to enhance scalability and maintainability.
 
